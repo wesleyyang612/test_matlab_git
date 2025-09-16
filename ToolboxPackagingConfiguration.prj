@@ -1,0 +1,820 @@
+<deployment-project plugin="plugin.toolbox" plugin-version="1.0">
+  <configuration file="D:\Users\DELL\MATLAB\Projects\test_git\ToolboxPackagingConfiguration.prj" location="D:\Users\DELL\MATLAB\Projects\test_git" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="打包为工具箱">
+    <param.appname>test_git</param.appname>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.output>${PROJECT_ROOT}\test_git.mltbx</param.output>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.guid>af741ad6-f89a-462d-a535-1d7c6543e545</param.guid>
+    <param.exclude.filters>% List files contained in your toolbox folder that you would like to exclude
+% from packaging.  Excludes should be listed relative to the toolbox folder.
+% Some examples of how to specify excludes are provided below:
+%
+% A single file in the toolbox folder:
+% .svn
+%
+% A single file in a subfolder of the toolbox folder:
+% example/.svn
+%
+% All files in a subfolder of the toolbox folder:
+% example/*
+%
+% All files of a certain name in all subfolders of the toolbox folder:
+% **/.svn
+%
+% All files matching a pattern in all subfolders of the toolbox folder:
+% **/*.bak
+%
+resources/project/*
+.SimulinkProject/*
+_SimulinkProject/*
+resources/.Project/*
+resources/_Project/*
+**/*.prj
+.git
+.git/COMMIT_EDITMSG
+.git/config
+.git/description
+.git/FETCH_HEAD
+.git/HEAD
+.git/hooks
+.git/hooks/README.sample
+.git/index
+.git/info
+.git/info/exclude
+.git/logs
+.git/logs/HEAD
+.git/logs/refs
+.git/logs/refs/heads
+.git/logs/refs/heads/main
+.git/logs/refs/remotes
+.git/logs/refs/remotes/origin
+.git/logs/refs/remotes/origin/main
+.git/logs/refs/stash
+.git/objects
+.git/objects/00
+.git/objects/00/02f054d326dc90c6bd326b8d2dd4d6fab37a07
+.git/objects/01
+.git/objects/01/cb34e67321e65742c10e03943ff21c2efb680d
+.git/objects/02
+.git/objects/02/d4e6eeee5f2ee36f31d7cc428f8fd94709ee7f
+.git/objects/08
+.git/objects/08/bc3ba71ee8682322849a3a16956634fa690a7b
+.git/objects/0a
+.git/objects/0a/3d5693fa803d147c198699e6e5184db5087e96
+.git/objects/0b
+.git/objects/0b/887cbbd25f7ed4a14c4b098d5a0a589284db70
+.git/objects/0c
+.git/objects/0c/30e7d40b77e0e7b29a6b1f48df98c601815f21
+.git/objects/10
+.git/objects/10/6f682b0892802e982d624aa3eee749aed21119
+.git/objects/15
+.git/objects/15/73f58c7c854e19c8fbb65fc6d17fe7054d59b0
+.git/objects/17
+.git/objects/17/2de52659e576b0a276cca841599df1bde89230
+.git/objects/17/8e78ab9409fb00e6c77c25414333f9299ba467
+.git/objects/18
+.git/objects/18/a1516f7cad6882607010f40ae7e8d3af3fee3c
+.git/objects/1c
+.git/objects/1c/2cec736ce5c35103246d1950405ab13f21c894
+.git/objects/1d
+.git/objects/1d/bde56a6f6a6f427b00e90956604dd8de5111b2
+.git/objects/20
+.git/objects/20/37c3329c5d46fd1183cc6179aa2506bf2bb59c
+.git/objects/24
+.git/objects/24/7461fa269a31ccfccad6afa543924101a78d56
+.git/objects/26
+.git/objects/26/cf4ffdce4ae3bae9c91f45c064ea355368a1e0
+.git/objects/28
+.git/objects/28/de192a97911e7293f2707356b07fa792c8bcfb
+.git/objects/2a
+.git/objects/2a/23f465f7b3d1cb280c1693947a25aad0599698
+.git/objects/2c
+.git/objects/2c/d2545bc997c2f9c2a7a2b7331ba4a368d2f43d
+.git/objects/2e
+.git/objects/2e/052d92e78b9eaa39716df08f9c224b29b7bc50
+.git/objects/2e/6ece4c646d4b5b97226970399ec3e87c9ab014
+.git/objects/2e/807e7219f5b59e9a419f14788af917ebd261c9
+.git/objects/34
+.git/objects/34/0bf723774ac4aaaa53563f60091c9e05b03221
+.git/objects/34/59967152e4dc3cd0dee263a321159d8901b737
+.git/objects/35
+.git/objects/35/22f327e9a593c828f250aee5a86af087d474a1
+.git/objects/36
+.git/objects/36/692700fe309502084ca7a969f23c19ae15a41d
+.git/objects/38
+.git/objects/38/b08a8c55ff3663976753b7b8eb1924d39393d4
+.git/objects/38/baa3cf3280dc07ff38d02dac978625c847c0a6
+.git/objects/41
+.git/objects/41/2fc4679857e13dc38b4e820ab6c2a90085209b
+.git/objects/41/373350e6338421f874a1313a3029073bf7bb7d
+.git/objects/43
+.git/objects/43/431da9a11cdc6ed78288116c0537f68f59f3be
+.git/objects/43/56a6aee4733ff5f507a76a74440a760c21bcc4
+.git/objects/44
+.git/objects/44/86fe0a294f271be13d839f84f13fc9ef8a98aa
+.git/objects/44/fe3313791a61e1668d0f69214f98ba18e7d9a3
+.git/objects/48
+.git/objects/48/dc413c8c2318235415309d9d0730b614e21198
+.git/objects/48/e6758b81a0e37ac37552f71db43b178715d598
+.git/objects/4b
+.git/objects/4b/a830ace85caf8ffbaa864073d04b3af30e0ef6
+.git/objects/4e
+.git/objects/4e/172be2917b498a59366b3892c29b9a36dc2b95
+.git/objects/4f
+.git/objects/4f/b7d07ab52a039503ff92fe00ddf83e98c7d0e6
+.git/objects/4f/cb6f4b42b4be22bf743318e2f332d9538c5211
+.git/objects/50
+.git/objects/50/10bce2df201c64bc9fbe4b3c84844dd72fb359
+.git/objects/50/ae1f468c50a3b0284c4c36e77c4446e23d3675
+.git/objects/51
+.git/objects/51/8d6ea6eaab64927ebe21d5e1ee13515efa919c
+.git/objects/54
+.git/objects/54/ee267639f67692e17bb31f9c176ddf4e325667
+.git/objects/58
+.git/objects/58/7c7c0364955479d9dcff149d21657fc948887f
+.git/objects/59
+.git/objects/59/3bf8523a7a301a51d43a978110e27aa25f4d6e
+.git/objects/5b
+.git/objects/5b/d5ed37d23c1883145586314d54fbb30487b14d
+.git/objects/5f
+.git/objects/5f/672e5af39c3547162ef314fa5e8231ba7a8824
+.git/objects/60
+.git/objects/60/2bb2b75126bd0146bff91f41717fee6c8390a5
+.git/objects/60/3491d3551f1505ec2c2ddd7cc7e593b5f6811d
+.git/objects/62
+.git/objects/62/d05aa9a5ed797439abfefa0500258320aac666
+.git/objects/64
+.git/objects/64/2c7d7196cf8faaf790088c552761121babcc51
+.git/objects/64/f89c48cf54064f7c6752c5524dab54718cad89
+.git/objects/66
+.git/objects/66/ba1fdd6c01610a05a66e6143623b6a72557c61
+.git/objects/66/bf20a38ec7bb8e36f785159f8d4c1f98d1a786
+.git/objects/66/ed3e94194faa613cb78594dce9331e6b360e7c
+.git/objects/67
+.git/objects/67/630dbd743c67107a8e6b431792929aa0afe736
+.git/objects/6b
+.git/objects/6b/a5307ad873cd7e581676667e6ece74cefe7445
+.git/objects/6b/e190e5abf28cd6dad8249fdca6e7c395b8f00f
+.git/objects/6e
+.git/objects/6e/a9944c656067a9bccca1a5b07f1004c2e62a93
+.git/objects/70
+.git/objects/70/09011a3fcc74ee23756a3f77a3164e62c9bc24
+.git/objects/73
+.git/objects/73/54fdecf61a134e17002cd88e24bdb583563af8
+.git/objects/73/e6f9aabff12802e7ef9cd4231eeb4b1f14c4a4
+.git/objects/74
+.git/objects/74/987d884b6ebb37476cc8b2b479cb95e60768e2
+.git/objects/74/dd51d166b8522c8896e8036f179b712ec47758
+.git/objects/76
+.git/objects/76/301e1b25283325575e9054585afd2f53198a96
+.git/objects/77
+.git/objects/77/329db82cf10f5fde47e71bea239bd6cb023909
+.git/objects/78
+.git/objects/78/71ff363b734b7e78113cdcff72c342813aaf8c
+.git/objects/7b
+.git/objects/7b/43cb7df6d3aa1a451da5207cdc4bcc75d32b28
+.git/objects/80
+.git/objects/80/6b4bde29475bbae64fdad37c0a3af4c25275e1
+.git/objects/80/a23d9f2dc026a3c15520a155e943deff46d044
+.git/objects/86
+.git/objects/86/36ab04b41d732f6695e1f21caa41ca389fafea
+.git/objects/88
+.git/objects/88/0a245431e7a98113172a9780fc7ac90164da50
+.git/objects/88/b106b0d493e2cd476b89230c313c276f8425e4
+.git/objects/8a
+.git/objects/8a/192453e71bb5198f065b377f72b2247612cf67
+.git/objects/8b
+.git/objects/8b/0d33670a6e3a9a33e1f93441e1e10b6a4d42dc
+.git/objects/8b/19cd8d619a932e40b204f8727a058459e18d3b
+.git/objects/8c
+.git/objects/8c/17dc5079046ab0c2fc6ef20b5099c78819b7cc
+.git/objects/8c/ca017ff49a6b5bb64115c99790d1921dc65b3a
+.git/objects/8d
+.git/objects/8d/c32660449b203ef2a50a8f8450e56caa36f90e
+.git/objects/8e
+.git/objects/8e/56164967b740d7cb218df611213ce1e5a16251
+.git/objects/91
+.git/objects/91/b0acc5e234f03f558c7cd38d277af7a66ce4fc
+.git/objects/92
+.git/objects/92/c669691d7419ca28ecd9c9227e53d0c27bbe02
+.git/objects/93
+.git/objects/93/61d2364311dd104b7059908442b2b61987e44b
+.git/objects/95
+.git/objects/95/8c22f23fc7e83353925681a0134ab309a2842c
+.git/objects/9c
+.git/objects/9c/3bfa42e8371d58169f4f1423d9c5152509f232
+.git/objects/9e
+.git/objects/9e/44b1443affa4722cf346a6c130c5e230024c7f
+.git/objects/9e/df334453c4f918c32b53aaef25d46d74c4968b
+.git/objects/9f
+.git/objects/9f/4567d57c02afd68979132a04cea31c7934033a
+.git/objects/a1
+.git/objects/a1/52b7517c8ece347b6bcd9235cf5d0adea493e5
+.git/objects/a4
+.git/objects/a4/de013b95cc333407321b2fa1debb80f0a38ff2
+.git/objects/a8
+.git/objects/a8/0646ad78c29ed44359d4b129d6f805da48ec84
+.git/objects/a8/5cebf8d37e2ce3ac632afb7773569dd02ea291
+.git/objects/ad
+.git/objects/ad/56f89002cb5726adaabe37b9c10e1b4ab0e632
+.git/objects/ad/b1d6a89bd2e095b0a7cd9c6e747a65697f541d
+.git/objects/b6
+.git/objects/b6/4c77b80ba463d340e9d6917a47b1ebf3ffb42c
+.git/objects/b8
+.git/objects/b8/2f875e63dba1b14f47c831365d82103a2c9909
+.git/objects/bc
+.git/objects/bc/5ca0bad7f07a532a4340ca46d216e386b687c0
+.git/objects/bc/f7b49daf84dde926c9d8dbf0d229367d1d44bf
+.git/objects/c0
+.git/objects/c0/186247ae34cdd684204df4f8bb0613148a5d93
+.git/objects/c1
+.git/objects/c1/41f03092cf7c0f850ceee4b58fb7948cdc9b33
+.git/objects/c1/da32ad75119abf1f15223069b0ccb9da3fee32
+.git/objects/c6
+.git/objects/c6/e53fbc5741b0be576a2584a2f8b16ca11cea23
+.git/objects/c7
+.git/objects/c7/b130c2aee0247cd285a02a529ac6f6e5e38b8f
+.git/objects/c8
+.git/objects/c8/7e69795a54752de5dfe6d05da8d8e2ed91ea3d
+.git/objects/c9
+.git/objects/c9/7d177c66fd368971e139706ab27af22ad0cd63
+.git/objects/cd
+.git/objects/cd/ddfcf57560d4e768142ca5c2fec0e2c18fd5de
+.git/objects/ce
+.git/objects/ce/cb76a3bcdd0c3c581297c2a33b277bcd564397
+.git/objects/ce/f58274d279cc98e4e9e0f89063d1b59c3dce9c
+.git/objects/d1
+.git/objects/d1/091cb9768b69db0f0579aa7df095fe07c03dcb
+.git/objects/d1/f7af8094082beb34c5f0f0b5f3e7383c30bded
+.git/objects/d6
+.git/objects/d6/1d592f71fb89b4db3cb028803b64cac78e074c
+.git/objects/d8
+.git/objects/d8/5d6d0b5b110a954fcd36caf7f1271cd06c98d8
+.git/objects/d9
+.git/objects/d9/5620f051c00a03a03a3e574c640881d5db3439
+.git/objects/d9/8f198dd1ba965700292fd75a00ab8b96182adc
+.git/objects/d9/957f2907c3474727e05bb3a4f6a0e8c5870ec5
+.git/objects/da
+.git/objects/da/01bcc578140a9c035f13f422ad2ea8123bedc8
+.git/objects/da/483c7f437437257ba32368fc9948ceaa79fa82
+.git/objects/dc
+.git/objects/dc/2bbd1af6aadad89e09623828de753972a65bb9
+.git/objects/dc/f5dad844cf5916dfcc0bdfb6b19f8c62c0f329
+.git/objects/dd
+.git/objects/dd/1c5da4d1936113c4c05b8c7bf297694befb09f
+.git/objects/dd/ec3c8f8a417320eadda721fa96baec5e20a8b9
+.git/objects/de
+.git/objects/de/b7a3a951b70692e53339c97d636cf0bef05423
+.git/objects/df
+.git/objects/df/688e577438b041eef0a6ed17c8e0d1657dbbaa
+.git/objects/e1
+.git/objects/e1/48a7e3245d402b2dd603287b8cc9943bd25a1e
+.git/objects/e2
+.git/objects/e2/0a37ca61d12d2d967cc28eb9ee3ae43c187acc
+.git/objects/e2/78c063577662f7ddf82cbb880e45eb086afb00
+.git/objects/e3
+.git/objects/e3/89773bbcb035caca165a4f35cbb0ab4ba9d5eb
+.git/objects/e3/a57d40c065b77c054a17ec6ca5dbf469d1f523
+.git/objects/e5
+.git/objects/e5/492ec193a765b996486ab23d882db8702f1d67
+.git/objects/e5/cd485c00a6024bbfbf1ffd43dba1c75b83bccc
+.git/objects/e6
+.git/objects/e6/005d1858e89c61ca2a5aa716c4310b5a7c3fa8
+.git/objects/e9
+.git/objects/e9/40d7124e67c508bd2c1cef2f33d92b11a1b9c4
+.git/objects/e9/93c77c1284ca987442c288c54d1bd5259e8e48
+.git/objects/ed
+.git/objects/ed/bb101db6245d5721139eb874477e5a01268ce6
+.git/objects/ee
+.git/objects/ee/d8cc4a05a800c290f79dea9d445348feded16b
+.git/objects/ee/dac2bc9f474ac6997fb8d4ef49c856477afb7b
+.git/objects/f3
+.git/objects/f3/0f75c89b9c435b9784bdda59e4d2ff9c0a366d
+.git/objects/f9
+.git/objects/f9/2dd91d3a2d7046fd6740293d94b11a255b7cd7
+.git/objects/f9/5ac46d4bb8ef7898494c59b2033d188e7e67d9
+.git/objects/f9/8414ce67f48e3f826e71b82df8bb22ff8d0c8c
+.git/objects/fb
+.git/objects/fb/b946806f9cf5ab74e7ac6de84b3651ea316b48
+.git/objects/fc
+.git/objects/fc/60f58290b0be97bc58d0c80153ded0d22870ce
+.git/objects/fe
+.git/objects/fe/e2cd2cfe823d1ce6e3e76d637e2e87665c63d7
+.git/objects/ff
+.git/objects/ff/b1fe82a84090cc252c11419151a6b8753eae17
+.git/objects/info
+.git/objects/pack
+.git/objects/pack/pack-9b610bcd972e9194a6e77b6dde7a36446880e1e6.idx
+.git/objects/pack/pack-9b610bcd972e9194a6e77b6dde7a36446880e1e6.pack
+.git/ORIG_HEAD
+.git/refs
+.git/refs/heads
+.git/refs/heads/main
+.git/refs/remotes
+.git/refs/remotes/origin
+.git/refs/remotes/origin/HEAD
+.git/refs/remotes/origin/main
+.git/refs/stash
+.git/refs/tags
+7-DOF Dual Arm/dynamics
+7-DOF Dual Arm/dynamics/dual_arm_left_load
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load.ccg
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load.dim
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load.dyn
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load.ini
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load.inm
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load.par
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load.regp
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load_ccg.c
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load_ccg.m
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load_dim.c
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load_dim.m
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load_dyn.c
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load_dyn.m
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load_inm.c
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_load_inm.m
+7-DOF Dual Arm/dynamics/dual_arm_left_load/dual_arm_left_loadbase.par
+7-DOF Dual Arm/dynamics/dual_arm_right_load
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load.ccg
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load.dim
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load.dyn
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load.ini
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load.inm
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load.par
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load.regp
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load_ccg.c
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load_ccg.m
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load_dim.c
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load_dim.m
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load_dyn.c
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load_dyn.m
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load_inm.c
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_load_inm.m
+7-DOF Dual Arm/dynamics/dual_arm_right_load/dual_arm_right_loadbase.par
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/flexiv_getY.mat
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/save_dualArmLeft_dyn_G.mat
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/save_dualArmLeft_dyn_INM.mat
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/save_flexiv_dyn.mat
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/Step0_dualArm_dyn_simp_G.m
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/Step0_dualArm_dyn_simp_INM.asv
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/Step0_dualArm_dyn_simp_INM.m
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/Step0_dualArmLeft_dyn_simp.m
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/Step0_flexiv_dyn.m
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/Step0_flexiv_dyn_simp.m
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/Step0_flexiv_dyn_simp_Christoffel.m
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/Step1_flexiv_betaM_ident.m
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/Step2_flexiv_betaG_ident.m
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/T_flexiv.mat
+7-DOF Dual Arm/dynamics/S2_MCG_YM_YG/Y_flexiv_symoro.mexw64
+7-DOF Dual Arm/ident_traj
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj/cal_cond_number.m
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj/exciting_traj.fig
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj/exciting_traj.pdf
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj/flexiv_iden_traj_gen_3_periods.m
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj/save_x_flexiv_cond106.mat
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj/save_x_flexiv_cond117.mat
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj/save_x_flexiv_cond122.mat
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj/save_x_flexiv_cond99.mat
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj/T_flexiv.mat
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj/Y_flexiv_symoro.mexw64
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/gen_traj/初始构型.txt
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/optimize
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/optimize/main.m
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/optimize/save_x_flexiv_cond106.mat
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/optimize/save_x_flexiv_cond117.mat
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/optimize/save_x_flexiv_cond122.mat
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/optimize/save_x_flexiv_cond99.mat
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/optimize/T_flexiv.mat
+7-DOF Dual Arm/ident_traj/Coupled Identification Trajectory/optimize/Y_flexiv_symoro.mexw64
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J1.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J2.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J3.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J4.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J5.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J6.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J7.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J_pi21.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J_pi22.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J_pi23.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J_pi24.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J_pi25.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J_pi26.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/dualArm_data_read_inertia_ident_A1_J_pi27.txt
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/gen_inertia_ident_traj_A1.m
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/main_A1.asv
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/main_A1.m
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J1.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J2.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J3.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J4.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J5.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J6.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J7.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J_pi21.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J_pi22.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J_pi23.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J_pi24.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J_pi25.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J_pi26.mat
+7-DOF Dual Arm/ident_traj/Diagonal Inertia Paras/time_inertia_ident_A1_J_pi27.mat
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/dualarm_data_read_grav_fric_ident_J1.txt
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/dualarm_data_read_grav_fric_ident_J2.txt
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/dualarm_data_read_grav_fric_ident_J3.txt
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/dualarm_data_read_grav_fric_ident_J4.txt
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/dualarm_data_read_grav_fric_ident_J5.txt
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/dualarm_data_read_grav_fric_ident_J6.txt
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/dualarm_data_read_grav_fric_ident_J7.txt
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/gen_grav_ripple_fric_ident_traj.m
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/main.m
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/time_grav_fric_ident_J1.mat
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/time_grav_fric_ident_J2.mat
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/time_grav_fric_ident_J3.mat
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/time_grav_fric_ident_J4.mat
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/time_grav_fric_ident_J5.mat
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/time_grav_fric_ident_J6.mat
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/time_grav_fric_ident_J7.mat
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/untitled.m
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/初始构型.txt
+7-DOF Dual Arm/ident_traj/Frictional-gravitational Paras/说明.txt
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/flexiv_data_read_inertial_ident_J2_B.txt
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/flexiv_data_read_inertial_ident_J3_B.txt
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/flexiv_data_read_inertial_ident_J4_B.txt
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/flexiv_data_read_inertial_ident_J5_B.txt
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/flexiv_data_read_inertial_ident_J6_B.txt
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/gen_inertia_ident_traj_B.m
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/main_gen_traj_B.m
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/save_x_optimized_flexiv_jnt2.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/save_x_optimized_flexiv_jnt3.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/save_x_optimized_flexiv_jnt4.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/save_x_optimized_flexiv_jnt5.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/save_x_optimized_flexiv_jnt6.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/time_inertial_ident_J2_B.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/time_inertial_ident_J3_B.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/time_inertial_ident_J4_B.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/time_inertial_ident_J5_B.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/time_inertial_ident_J6_B.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/gen_traj/初值.txt
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/optimize
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/optimize/get_Yx.m
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/optimize/InertIdentTrajOpt_Jx.m
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/optimize/main1_InertIdentTrajOpt_Jx.m
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/optimize/save_x_optimized_flexiv_jnt2.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/optimize/save_x_optimized_flexiv_jnt3.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/optimize/save_x_optimized_flexiv_jnt4.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/optimize/save_x_optimized_flexiv_jnt5.mat
+7-DOF Dual Arm/ident_traj/Off-Diagonal Inertia Paras/optimize/save_x_optimized_flexiv_jnt6.mat
+7-DOF Dual Arm/ident_traj/Validation Trajectory
+7-DOF Dual Arm/ident_traj/Validation Trajectory/flexiv_time_validation.mat
+7-DOF Dual Arm/ident_traj/Validation Trajectory/gen_test_traj_muti.m
+7-DOF Dual Arm/ident_traj/Validation Trajectory/main_muti.m
+7-DOF Dual Arm/ident_traj/Validation Trajectory/初值.txt
+7-DOF Dual Arm/para_est_FDI
+7-DOF Dual Arm/para_est_FDI/grav
+7-DOF Dual Arm/para_est_FDI/grav/beta_dualArm_SWmodel.mat
+7-DOF Dual Arm/para_est_FDI/grav/betaG_dualArm.mat
+7-DOF Dual Arm/para_est_FDI/grav/calculate_dynamics_with_SWmodel.m
+7-DOF Dual Arm/para_est_FDI/grav/calculate_regroup_param_wirh_SWmodel.m
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_read_grav_fric_ident_J1.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_read_grav_fric_ident_J2.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_read_grav_fric_ident_J3.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_read_grav_fric_ident_J4.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_read_grav_fric_ident_J5.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_read_grav_fric_ident_J6.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_read_grav_fric_ident_J7.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_write_grav_fric_ident_J1.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_write_grav_fric_ident_J2.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_write_grav_fric_ident_J3.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_write_grav_fric_ident_J4.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_write_grav_fric_ident_J5.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_write_grav_fric_ident_J6.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualarm_data_write_grav_fric_ident_J7.txt
+7-DOF Dual Arm/para_est_FDI/grav/dualArm_FricGravRipIdent.m
+7-DOF Dual Arm/para_est_FDI/grav/fric_tab.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_data_J1.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_data_J2.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_data_J3.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_data_J4.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_data_J5.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_data_J6.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_data_J7.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_fric_raw_data_J1.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_fric_raw_data_J2.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_fric_raw_data_J3.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_fric_raw_data_J4.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_fric_raw_data_J5.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_fric_raw_data_J6.mat
+7-DOF Dual Arm/para_est_FDI/grav/grav_fric_raw_data_J7.mat
+7-DOF Dual Arm/para_est_FDI/grav/gravity_test_new_traj.m
+7-DOF Dual Arm/para_est_FDI/grav/main_dualArm_FricGravRipIdent.m
+7-DOF Dual Arm/para_est_FDI/grav/my_plot_fric.m
+7-DOF Dual Arm/para_est_FDI/grav/my_plot_gravity.m
+7-DOF Dual Arm/para_est_FDI/grav/plot_write_file.m
+7-DOF Dual Arm/para_est_FDI/grav/time_grav_fric_ident_J1.mat
+7-DOF Dual Arm/para_est_FDI/grav/time_grav_fric_ident_J2.mat
+7-DOF Dual Arm/para_est_FDI/grav/time_grav_fric_ident_J3.mat
+7-DOF Dual Arm/para_est_FDI/grav/time_grav_fric_ident_J4.mat
+7-DOF Dual Arm/para_est_FDI/grav/time_grav_fric_ident_J5.mat
+7-DOF Dual Arm/para_est_FDI/grav/time_grav_fric_ident_J6.mat
+7-DOF Dual Arm/para_est_FDI/grav/time_grav_fric_ident_J7.mat
+7-DOF Dual Arm/para_est_FDI/grav/txt2data_dualArm.m
+7-DOF Dual Arm/para_est_FDI/grav/untitled.m
+7-DOF Dual Arm/para_est_FDI/grav/write_filedualarm_data_write_grav_fric_ident_J1.txt
+7-DOF Dual Arm/para_est_FDI/grav/write_filedualarm_data_write_grav_fric_ident_J2.txt
+7-DOF Dual Arm/para_est_FDI/grav/write_filedualarm_data_write_grav_fric_ident_J3.txt
+7-DOF Dual Arm/para_est_FDI/grav/write_filedualarm_data_write_grav_fric_ident_J4.txt
+7-DOF Dual Arm/para_est_FDI/grav/write_filedualarm_data_write_grav_fric_ident_J5.txt
+7-DOF Dual Arm/para_est_FDI/grav/write_filedualarm_data_write_grav_fric_ident_J6.txt
+7-DOF Dual Arm/para_est_FDI/grav/write_filedualarm_data_write_grav_fric_ident_J7.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaG_dualArm.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_dualArm.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J1.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J2.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J3.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J4.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J5.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J6.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J7.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J_pi21.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J_pi22.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J_pi23.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J_pi24.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J_pi25.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/betaM_diag_inertia_J_pi26.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_filtering.m
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J1.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J2.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J3.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J4.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J5.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J6.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J7.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J_pi21.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J_pi22.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J_pi23.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J_pi24.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J_pi25.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_read_inertia_ident_A1_J_pi26.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J1.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J2.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J3.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J4.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J4_old.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J5.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J5_old.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J6.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J6_old.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J7.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J7_old.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J_pi21.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J_pi22.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J_pi23.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J_pi24.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J_pi25.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_data_write_inertia_ident_A1_J_pi26.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_Inertia_A1.asv
+7-DOF Dual Arm/para_est_FDI/iner_A1/dualArm_Inertia_A1.m
+7-DOF Dual Arm/para_est_FDI/iner_A1/filter_paras.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/filtered_data.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/gen_betaM_diag.m
+7-DOF Dual Arm/para_est_FDI/iner_A1/inertia_flexiv.pdf
+7-DOF Dual Arm/para_est_FDI/iner_A1/main_dualArm_Inertia_A1.m
+7-DOF Dual Arm/para_est_FDI/iner_A1/main_gen.m
+7-DOF Dual Arm/para_est_FDI/iner_A1/main_plot_A1_dualArm_tro.m
+7-DOF Dual Arm/para_est_FDI/iner_A1/pi2_dualArm_Inertia_A1.m
+7-DOF Dual Arm/para_est_FDI/iner_A1/pi2_main_dualArm_Inertia_A1.m
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J1.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J2.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J3.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J4.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J5.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J6.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J7.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J_pi21.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J_pi22.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J_pi23.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J_pi24.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J_pi25.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/time_inertia_ident_A1_J_pi26.mat
+7-DOF Dual Arm/para_est_FDI/iner_A1/txt2data_dualArm.m
+7-DOF Dual Arm/para_est_FDI/iner_A1/write_filedualArm_data_write_inertia_ident_A1_J3_single1.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/write_filedualArm_data_write_inertia_ident_A1_J3_single2.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/write_filedualArm_data_write_inertia_ident_A1_J7_single.txt
+7-DOF Dual Arm/para_est_FDI/iner_A1/write_filedualArm_data_write_inertia_ident_A1_J7_single2.txt
+7-DOF Dual Arm/para_est_FDI/iner_B
+7-DOF Dual Arm/para_est_FDI/iner_B/average123.fig
+7-DOF Dual Arm/para_est_FDI/iner_B/average333.fig
+7-DOF Dual Arm/para_est_FDI/iner_B/betaG.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/betaM_diag.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/betaM_offdiag.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/betaM_offdiag_lumped.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/cal_betaM_offdiag.m
+7-DOF Dual Arm/para_est_FDI/iner_B/Copy_of_inertia2B.fig
+7-DOF Dual Arm/para_est_FDI/iner_B/filter_paras.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/filtered_data.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/flexiv_data_filtering_notsavemat.m
+7-DOF Dual Arm/para_est_FDI/iner_B/flexiv_data_write_inertial_ident_J2_B.txt
+7-DOF Dual Arm/para_est_FDI/iner_B/flexiv_data_write_inertial_ident_J3_B.txt
+7-DOF Dual Arm/para_est_FDI/iner_B/flexiv_data_write_inertial_ident_J3_B_old.txt
+7-DOF Dual Arm/para_est_FDI/iner_B/flexiv_data_write_inertial_ident_J4_B.txt
+7-DOF Dual Arm/para_est_FDI/iner_B/flexiv_data_write_inertial_ident_J5_B.txt
+7-DOF Dual Arm/para_est_FDI/iner_B/flexiv_data_write_inertial_ident_J6_B.txt
+7-DOF Dual Arm/para_est_FDI/iner_B/flexiv_Inertia_B.m
+7-DOF Dual Arm/para_est_FDI/iner_B/inertia2B.fig
+7-DOF Dual Arm/para_est_FDI/iner_B/inertia2B.pdf
+7-DOF Dual Arm/para_est_FDI/iner_B/jnt2B.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/jnt3B.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/jnt4B.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/jnt5B.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/jnt6B.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/main_flexiv_Inertia_B.m
+7-DOF Dual Arm/para_est_FDI/iner_B/main_plot_inertia2B_paperuse.m
+7-DOF Dual Arm/para_est_FDI/iner_B/Q2B.fig
+7-DOF Dual Arm/para_est_FDI/iner_B/Q3B.fig
+7-DOF Dual Arm/para_est_FDI/iner_B/Q4B.fig
+7-DOF Dual Arm/para_est_FDI/iner_B/Q5B.fig
+7-DOF Dual Arm/para_est_FDI/iner_B/Q6B.fig
+7-DOF Dual Arm/para_est_FDI/iner_B/test.m
+7-DOF Dual Arm/para_est_FDI/iner_B/time_inertial_ident_J2_B.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/time_inertial_ident_J3_B.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/time_inertial_ident_J4_B.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/time_inertial_ident_J5_B.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/time_inertial_ident_J6_B.mat
+7-DOF Dual Arm/para_est_FDI/iner_B/txt2data_flexiv.m
+7-DOF Dual Arm/para_est_FDI/iner_B/初值.txt
+7-DOF Dual Arm/V1臂.docx
+7-DOF Dual Arm/验证轨迹
+7-DOF Dual Arm/验证轨迹.zip
+7-DOF Dual Arm/验证轨迹/Calculate_tau.m
+7-DOF Dual Arm/验证轨迹/dualarm_data_write_grav_fric_ident_J2.txt
+7-DOF Dual Arm/验证轨迹/dualArm_data_write_inertia_ident_A1_J2.txt
+7-DOF Dual Arm/验证轨迹/dualArm_data_write_inertia_ident_A1_J_pi22.txt
+7-DOF Dual Arm/验证轨迹/read_file.m
+7-DOF Dual Arm/验证轨迹/验证轨迹
+7-DOF Dual Arm/验证轨迹/验证轨迹.zip
+7-DOF Dual Arm/验证轨迹/验证轨迹/dualArm_data_read_validation.txt
+7-DOF Dual Arm/验证轨迹/验证轨迹/dualArm_time_validation.mat
+7-DOF Dual Arm/验证轨迹/验证轨迹/gen_test_traj_muti.m
+7-DOF Dual Arm/验证轨迹/验证轨迹/get_movj_traj_dualArm.m
+7-DOF Dual Arm/验证轨迹/验证轨迹/main_muti.m
+7-DOF Dual Arm/验证轨迹/验证轨迹/初值.txt
+ToolboxPackagingConfiguration.prj</param.exclude.filters>
+    <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
+    <param.examples />
+    <param.demosxml />
+    <param.apps />
+    <param.registered.apps />
+    <param.docs />
+    <param.getting.started.guide />
+    <param.matlabpath.excludes />
+    <param.javaclasspath.excludes />
+    <param.exported.on.package>false</param.exported.on.package>
+    <param.required.addons />
+    <param.matlab.project.id>3bdd41a8-3eef-4eb7-977d-bba64cd17286</param.matlab.project.id>
+    <param.matlab.project.name>test_git</param.matlab.project.name>
+    <param.release.start />
+    <param.release.end />
+    <param.release.current.only>false</param.release.current.only>
+    <param.compatiblity.windows>true</param.compatiblity.windows>
+    <param.compatiblity.macos>true</param.compatiblity.macos>
+    <param.compatiblity.linux>true</param.compatiblity.linux>
+    <param.compatiblity.matlabonline>true</param.compatiblity.matlabonline>
+    <param.installation.map />
+    <param.additional.sw.names />
+    <param.additional.sw.licenses />
+    <param.additional.sw.win.url />
+    <param.additional.sw.mac.url />
+    <param.additional.sw.linux.url />
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.version />
+      <param.output />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.exclude.pcodedmfiles />
+      <param.examples />
+      <param.demosxml />
+      <param.apps />
+      <param.registered.apps />
+      <param.docs />
+      <param.getting.started.guide />
+      <param.matlabpath.excludes />
+      <param.javaclasspath.excludes />
+      <param.exported.on.package />
+      <param.required.addons />
+      <param.release.start />
+      <param.release.end />
+      <param.release.current.only />
+      <param.compatiblity.windows />
+      <param.compatiblity.macos />
+      <param.compatiblity.linux />
+      <param.compatiblity.matlabonline />
+      <param.installation.map />
+      <param.additional.sw.names />
+      <param.additional.sw.licenses />
+      <param.additional.sw.win.url />
+      <param.additional.sw.mac.url />
+      <param.additional.sw.linux.url />
+    </unset>
+    <fileset.rootdir>
+      <file>${PROJECT_ROOT}</file>
+    </fileset.rootdir>
+    <fileset.rootfiles>
+      <file>${PROJECT_ROOT}\.git</file>
+      <file>${PROJECT_ROOT}\.gitattributes</file>
+      <file>${PROJECT_ROOT}\.gitignore</file>
+      <file>${PROJECT_ROOT}\7-DOF Dual Arm</file>
+      <file>${PROJECT_ROOT}\README.md</file>
+      <file>${PROJECT_ROOT}\resources</file>
+      <file>${PROJECT_ROOT}\Test_git.prj</file>
+      <file>${PROJECT_ROOT}\ToolboxPackagingConfiguration.prj</file>
+    </fileset.rootfiles>
+    <fileset.depfun.included />
+    <fileset.depfun.excluded />
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}" name="test_git.mltbx" optional="false">D:\Users\DELL\MATLAB\Projects\test_git\test_git.mltbx</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\ProgramFiles\MATLAB\R2024b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

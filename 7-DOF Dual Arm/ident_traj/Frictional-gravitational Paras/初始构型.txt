@@ -1,0 +1,7 @@
+
+dualarm_data_read_grav_fric_ident_J2.txt初始构型： 【pi/2,0,0,-pi/2,0,0,0】
+dualarm_data_read_grav_fric_ident_J3.txt初始构型： 【0,0,0,pi/2,0,0,0】
+dualarm_data_read_grav_fric_ident_J4.txt初始构型： 【0,0,pi/2,0,0,0,0】
+dualarm_data_read_grav_fric_ident_J5.txt初始构型： 【0,0,0,0,0,pi/2,0】
+dualarm_data_read_grav_fric_ident_J6.txt初始构型： 【0,0,0,0,pi/2,0,0】
+其他txt初始构型：【0,0,0,0,0,0,0】

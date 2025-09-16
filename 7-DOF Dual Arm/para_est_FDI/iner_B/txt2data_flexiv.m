@@ -1,0 +1,17 @@
+data = load(filename);
+
+sample = data(:,1);
+t = data(:,2);
+offset = 2;
+q              = data(:,offset+1:offset+7);   offset = offset + 7;
+q_dot          = data(:,offset+1:offset+7);   offset = offset + 7;          
+jointacttorque = data(:,offset+1:offset+7);   offset = offset + 7;
+qd             = data(:,offset+1:offset+7);   offset = offset + 7;
+qd_dot         = data(:,offset+1:offset+7);   offset = offset + 7;
+qd_ddot        = data(:,offset+1:offset+7);   offset = offset + 7;
+jointcmdtorque = data(:,offset+1:offset+7);   offset = offset + 7;
+tau_dot        = data(:,offset+1:offset+7);   offset = offset + 7;
+tau_ext        = data(:,offset+1:offset+7);   offset = offset + 7;
+theta          = data(:,offset+1:offset+7);   offset = offset + 7;
+theta_dot      = data(:,offset+1:offset+7);   offset = offset + 7;
+clear data
